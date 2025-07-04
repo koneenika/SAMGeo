@@ -1,0 +1,9 @@
+streamlit
+samgeo
+leafmap
+torch==2.5.1+cu121
+torchvision==0.20.1+cu121
+
+#for cpu
+torch==2.5.1
+torchvision==0.20.1
