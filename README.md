@@ -1,1 +1,7 @@
-# SAMGeo
+LangSAM GeoTIFF Segmentation App
+
+This Streamlit web application enables semantic segmentation of geospatial imagery using natural language prompts. Built with the LangSAM model from the samgeo library, users can upload GeoTIFF images and specify features to segment using simple text descriptions like "roads", "buildings", or "vegetation". The application automatically tiles large images into 1000x1000 pixel chunks for efficient processing, applies the LangSAM model with configurable thresholds (0.24 for both box and text detection), and merges the results into a comprehensive segmentation mask.
+
+The application provides an interactive visualization experience through Leafmap, displaying both the original imagery and segmented results on a dynamic map interface. Users can explore the segmentation quality in real-time and download both raster (GeoTIFF) and vector (Shapefile) outputs for further analysis. The processing pipeline includes automatic conversion from raster masks to vector polygons, making the results suitable for GIS workflows and spatial analysis.
+
+To use the application, simply clone the repository, install the required dependencies (streamlit, samgeo, leafmap), and run streamlit run app.py. The intuitive interface allows users to upload their GeoTIFF files, enter descriptive text prompts, and receive segmented outputs with tracked inference times. This tool is particularly valuable for remote sensing analysis, environmental monitoring, urban planning, and other geospatial applications requiring rapid feature extraction from satellite or aerial imagery.
